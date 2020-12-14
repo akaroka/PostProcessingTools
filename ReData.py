@@ -109,8 +109,8 @@ if __name__ == '__main__':
     filename = 'data.txt'
     disp_list1 = list(np.loadtxt(filename, delimiter='	', usecols=(0,), dtype=float))
     force_list1 = list(np.loadtxt(filename, delimiter='	', usecols=(1,), dtype=float))
-    origindata1 = OriginData([disp_list1, force_list1], datatype1, incr1, rangepara1)
-    result1 = origindata1.stadata()
+    redata1 = ReData([disp_list1, force_list1], datatype1, incr1, rangepara1)
+    result1 = redata1.stadata()
     # print(origindata1.cycin_list)
     # print(origindata1.protocal)
     #
